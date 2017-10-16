@@ -1,6 +1,13 @@
-* Cl-Iberparser 
+* Cl-Iberparser
 
 ** Usage
+   - (prices-for-lines-in "/path/to/your/search-urls-and-prices-file.txt")
+
+   - "/path/to/your/search-urls-and-prices-file.txt":
+
+#+BEGIN_SRC text
+https://www.iberlibro.com/servlet/SearchResults?sts=t&an=&tn=Partial+Evaluation+and+Automatic+Program+Generation&kn=&isbn= 400
+#+END_SRC
 
 ** Installation
 
@@ -14,4 +21,4 @@ Copyright (c) 2017 Raimon Grau (raimonster@gmail.com)
 
 ** License
 
-Licensed under the LLGPL License.
+   Licensed under the LLGPL License.
