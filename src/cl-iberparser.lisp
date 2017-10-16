@@ -1,6 +1,6 @@
 (in-package :cl-user)
 (defpackage cl-iberparser
-  (:use :cl))
+  (:use :cl :clss :plump :drakma))
 (in-package :cl-iberparser)
 
 
@@ -8,8 +8,8 @@
   (handler-case
       (parse-float:parse-float
        (ppcre:regex-replace "^.*EUR (.*) *$"
-                            (substitute #\Space #\NewLine (plump:text txt))
-                            "\\1")
+        (substitute #\Space #\NewLine (plump:text txt))
+        "\\1")
        :decimal-character #\,)
     (error () 0)))
 
