@@ -1,4 +1,7 @@
 * Cl-Iberparser
+** what's it
+   App to fetch iberlibro.com book prices and notify if any of the
+   wishlist books are cheaper than a threshold price.
 
 ** Usage
    - (prices-for-lines-in "/path/to/your/search-urls-and-prices-file.txt")
